@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+
+}
+/* ============== global style ============= */
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style: none;
+}
+
+nav{
+  background: linear-gradient(to right, #000046, #1cb5e0)
+  ;
+
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav ul{
+  float: right;
+  list-style: none;
+  margin-right: 2rem;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  margin: 0 .5rem;
+
+}
+nav ul li a{
+  color: #fff;
+  line-height: 7rem;
+  padding: 1rem 2rem;
+}
+nav ul  li >  ul{
+   position: absolute;
+   top: 7rem;
+   opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  /* top: -20rem;
+  z-index: -1; */
+  text-align: center;
+
+}
+nav ul li:hover > ul{
+   opacity: 1;
+  visibility: visible; 
+  /* top: 7rem; */
+}
+nav ul li > ul li{
+  position: relative;
+  margin: 0;
+  width: 25rem;
+  float: none;
+  display: list-item; 
+  background: linear-gradient(to right, #200122, #6f0000);
+
+}
+nav ul li > ul li a{
+  line-height: 5rem;
+}
+nav ul  li > ul li > ul li{
+  position: relative;
+  top: -7rem;
+  left: 25rem;
+}
+nav .logo{
+  float: left;
+font-size: 3rem;
+line-height: 7rem;
+padding-left: 200px;
+}
